@@ -2,10 +2,17 @@ import { useContext } from "react";
 import Card from "../ui/Card";
 import { Link } from "react-router-dom";
 import { CityContext } from "../../context/CityContext";
+import Spinner from "../Spinner";
 
 export default function PrayerTimes() {
 
-    const { selectedTimings, images, prayersUz } = useContext(CityContext)
+    const { selectedTimings, images, prayersUz, isLoading } = useContext(CityContext)
+
+    if (isLoading) {
+        return (
+            <Spinner />
+        )
+    }
 
     return (
         <div className="card-wrapper">

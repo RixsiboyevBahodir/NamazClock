@@ -12,8 +12,6 @@ export default function Header() {
         setCity(value)
     };
 
-    console.log("Header test")
-
     return (
         <div className="header">
             <h1>Namoz vaqtlari</h1>
@@ -46,7 +44,6 @@ export default function Header() {
             <div className="time-wrapper">
                 <p className="address">Mintaqa:<span className="city">{city}</span></p>
                 <div className="date">
-                    <img src="" alt="" />
                     <Clock />
                     <DateSelected />
                 </div>

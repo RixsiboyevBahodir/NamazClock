@@ -3,8 +3,6 @@ import PrayerTimes from "./PrayerTimes";
 
 export default function MainLayout() {
 
-  console.log("test MainLayout")
-
   return (
     <div>
       <Header />
