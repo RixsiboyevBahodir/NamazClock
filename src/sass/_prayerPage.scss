@@ -1,0 +1,101 @@
+.prayer-card
+{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .prayer-page
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .region-card
+        {
+            padding: 20px;
+            width: 350px;
+            height: 550px;
+            background-color: #aba9a964;
+            box-shadow: 0px 0px 15px #aba9a983;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .title-uz
+            {
+                font-weight: 700;
+                font-size: 55px;
+                color:#FFC700 ;
+            }
+            .title
+            {
+                font-size: 25px;
+                color:#FFC700 ;
+            }
+            img
+            {
+                height: 280px;
+            }
+            .clock
+            {
+                font-weight: 700;
+                font-size: 52px;
+            }
+        }
+        .right-wrapper
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 20px;
+            .info
+            {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                .city
+                {
+                    font-size: 32px;
+                    font-weight: 600;
+                }
+            }
+            .info{
+                color: #FFC700;
+                font-size: 20px;
+            }
+            .howToPray
+            {
+                background-color: #aba9a964;
+                box-shadow: 0px 0px 15px #aba9a983;
+                thead
+                {
+                    font-size: 28px;
+                    th
+                    {
+                        padding: 12px;
+                        text-align: center;
+                        border: 1px solid #fff;
+                        color: #FFC700;
+                    }
+                }
+                tbody
+                {
+                    tr
+                    {
+                        text-align: center;
+                    }
+                    td
+                    {
+                        border: 1px solid #fff;
+                        font-size: 18px;
+                        padding: 10px;
+                    }
+                    td:nth-child(2)
+                    {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}

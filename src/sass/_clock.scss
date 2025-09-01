@@ -1,0 +1,120 @@
+.real-time
+{
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    .calendar-img
+    {
+        width: 25px;
+    }
+    .date
+    {
+        color: #FFC700;
+    }
+}
+
+.big-clock
+{
+    font-size: 40px;
+}
+
+// DatePicker input style
+.my-datepicker 
+{
+    background-color: #1a174d07;
+  .ant-picker 
+  {
+    width: 220px;
+    height: 44px;
+    background: rgba(34, 34, 34, 0.5) !important; // yarim shaffof qora
+    border: 2px solid #fff !important;
+    border-radius: 30px !important;
+    color: #fff !important;
+    font-weight: 600;
+    font-size: 18px;
+    box-shadow: none !important;
+    transition: 0.3s;
+
+    // input ichidagi yozuv
+    .ant-picker-input > input 
+    {
+      background: transparent !important;
+      color: #fff !important;
+      font-weight: 600;
+      font-size: 18px;
+      border: none !important;
+      box-shadow: none !important;
+      caret-color: #fff; // yozuv kursori oq
+    }
+
+    // calendar icon
+    .ant-picker-suffix 
+    {
+      color: #fff !important;
+    }
+
+    &:hover,
+    &.ant-picker-focused 
+    {
+      border-color: #fff !important;
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.4) !important;
+    }
+  }
+}
+
+.my-datepicker:hover
+{
+    background-color: #1a174d07;
+}
+
+
+// Dropdown calendar style
+.ant-picker-dropdown 
+{
+  background: transparent !important;
+
+  .ant-picker-panel-container 
+  {
+    background: #2222225e;
+    border-radius: 20px !important;
+    border: 2px solid #fff;
+    overflow: hidden;
+  }
+
+  .ant-picker-header 
+  {
+    background: transparent;
+    color: #fff;
+    font-weight: 600;
+    border-bottom: 1px solid #fff;
+  }
+
+  .ant-picker-cell 
+  {
+    color: #fff !important;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: 0.2s;
+  }
+
+  .ant-picker-cell-in-view.ant-picker-cell-today 
+  {
+    border: 1px solid #fff !important;
+  }
+
+  .ant-picker-cell-in-view.ant-picker-cell-selected 
+  {
+    background: #fff !important;
+    color: #1a174d !important;
+    font-weight: 600;
+  }
+
+  .ant-picker-cell-in-view:hover 
+  {
+    background: #e0e0e0 !important;
+    color: #1a174d !important;
+  }
+}

@@ -1,0 +1,32 @@
+.card
+{
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    background-color: #aba9a983;
+    max-width: 200px;
+    box-shadow: 5px 5px 10px #aba9a983;
+    img
+    {
+        width: 100%;
+        height: 180px;
+        padding: 0 10px;
+    }
+    .title-uz
+    {
+        font-weight: 700;
+        font-size: 32px;
+        color: #FFC700;
+    }
+    .title
+    {
+        color: #FFC700;
+    }
+    .time
+    {
+        font-weight: 700;
+        font-size: 48px;
+    }
+}

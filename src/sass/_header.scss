@@ -1,0 +1,111 @@
+// Select input style
+.select-input 
+{
+    width: 200px;
+    .ant-select-selector 
+    {
+        background: #2222225e;
+        color: #fff;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 18px;
+        border: 2px solid #fff;
+        box-shadow: none;
+    }
+}
+
+// Dropdown style
+.ant-select-dropdown 
+{
+    background: #2222225e !important;
+    border-radius: 20px !important;
+    .ant-select-item 
+    {
+        color: #1a174d !important;
+        font-weight: 600;
+        font-size: 18px;
+        border-radius: 10px;
+        background: transparent !important;
+    }
+    .ant-select-item-option-selected 
+    {
+        background: #fff !important;
+        color: #1a174d !important;
+        font-weight: 600;
+    }
+    .ant-select-item-option-active 
+    {
+        background: #e0e0e0 !important;
+        color: #1a174d !important;
+    }
+}
+.header
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+    h1
+    {
+        font-weight: 700;
+        font-size: 32px;
+    }
+    .text
+    {
+        color: #FFC700;
+        font-size: 18px;
+    }
+    .line
+    {
+        margin: 30px 0;
+        border-bottom: 1px solid #fff;
+        width: 1000px;
+    }
+    .select-wrapper
+    {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        .text
+        {
+            font-weight: 700;
+            font-size: 16px;
+        }
+        .select-input 
+        {
+            .ant-select-selector 
+            {
+                background: #2222225e;
+                color: #fff;
+                border-radius: 30px;
+                font-weight: 600;
+                font-size: 18px;
+                border: 2px solid #fff;
+                width: 150px;
+                color: #13003C;
+            }
+        }
+    }
+    .time-wrapper
+    {
+        margin: 40px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        .address
+        {
+            font-size: 19px;
+            .city
+            {
+                color: #FFC700;
+            }
+        }
+         .date
+         {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+         }
+    }
+}

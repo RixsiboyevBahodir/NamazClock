@@ -1,0 +1,48 @@
+*{
+    font-family: "Jost", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,ol
+{
+    list-style: none;
+}
+
+.wrapper
+{
+    max-width: 1300px;
+    width: 100%;
+    height: 100vh;
+    margin: 0px auto;
+}
+
+
+.container 
+{
+    background: linear-gradient(#00000050,#00000050),url(../assets/svg/Background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.card-wrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@import "./header";
+@import "./card";
+@import "./notFound";
+@import "./prayerPage";
+@import "./clock"
