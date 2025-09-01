@@ -1,17 +1,15 @@
-import { useParams } from "react-router-dom"
+import { useParams } from "react-router-dom";
 import Clock from "../../components/ui/Clock";
 import { useContext } from "react";
-import { CityContext } from "../../context/CityContext"
+import { CityContext } from "../../context/CityContext";
 
 export default function PrayerPage() {
+    const { key } = useParams();
+    const { city, images, prayersUz, selectedTimings, selectedDate } = useContext(CityContext);
 
-    const { key } = useParams()
+    const prayer = selectedTimings?.find(([name]) => name === key) || ["Noma'lum", "00:00"];
 
-    const { city, images, prayersUz, selectedTimings, selectedDate } = useContext(CityContext)
-
-    const prayer = selectedTimings.find(([name]) => name === key)
-
-    const [name, time] = prayer
+    const [name, time] = prayer;
 
     return (
         <div className="prayer-card">
@@ -30,7 +28,7 @@ export default function PrayerPage() {
                     <p className="info">
                         {prayersUz[name] === "Quyosh"
                             ? `${selectedDate}dagi ${prayersUz[name]} chiqish vaqti`
-                            : `${selectedDate}dagi o'qiadigan ${prayersUz[name]} namoz vaqti`}
+                            : `${selectedDate}dagi o'qiladigan ${prayersUz[name]} namoz vaqti`}
                     </p>
                     <table className="howToPray">
                         <thead>
@@ -113,5 +111,5 @@ export default function PrayerPage() {
                 </div>
             </div>
         </div>
-    )
+    );
 }

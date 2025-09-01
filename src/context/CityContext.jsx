@@ -1,10 +1,10 @@
 import { createContext, useState } from "react";
-import DawnPrayer from "../assets/svg/Dawn-Prayer.svg";
-import NoonPreyer from "../assets/svg/Noon-Prayer.svg";
-import AsrPreyer from "../assets/svg/Asr-Prayer.svg";
-import SunsetPreyer from "../assets/svg/Sunset-Prayer.svg";
-import NightPreyer from "../assets/svg/Night-Prayer.svg"
-import Sunrise from "../assets/svg/Sunrise.svg"
+import DawnPrayer from "../assets/svg/dawn-prayer.svg";
+import NoonPreyer from "../assets/svg/noon-prayer.svg";
+import AsrPreyer from "../assets/svg/asr-prayer.svg";
+import SunsetPreyer from "../assets/svg/sunset-prayer.svg";
+import NightPreyer from "../assets/svg/night-prayer.svg"
+import Sunrise from "../assets/svg/sunrise.svg"
 import useDataGet from "../hooks/useDataGet";
 
 export const CityContext = createContext()
