@@ -1,10 +1,10 @@
 import { createContext, useState } from "react";
-import DawnPrayer from "../assets/svg/dawn-prayer.svg";
-import NoonPreyer from "../assets/svg/noon-prayer.svg";
-import AsrPreyer from "../assets/svg/asr-prayer.svg";
-import SunsetPreyer from "../assets/svg/sunset-prayer.svg";
-import NightPreyer from "../assets/svg/night-prayer.svg"
-import Sunrise from "../assets/svg/sunrise.svg"
+import DawnPrayer from "../assets/svg/dawnPrayer.svg";
+import NoonPrayer from "../assets/svg/noonPrayer.svg";
+import AsrPrayer from "../assets/svg/asrPrayer.svg";
+import SunsetPrayer from "../assets/svg/sunsetPrayer.svg";
+import NightPrayer from "../assets/svg/nightPrayer.svg";
+import Sunrise from "../assets/svg/sunrise.svg";
 import useDataGet from "../hooks/useDataGet";
 
 export const CityContext = createContext()
@@ -25,12 +25,12 @@ export const CityContextProvider = ({ children }) => {
 
     const images = {
         Fajr: DawnPrayer,
-        Dhuhr: NoonPreyer,
-        Asr: AsrPreyer,
-        Maghrib: SunsetPreyer,
-        Isha: NightPreyer,
+        Dhuhr: NoonPrayer,
+        Asr: AsrPrayer,
+        Maghrib: SunsetPrayer,
+        Isha: NightPrayer,
         Sunrise: Sunrise
-    }
+    };
 
     const prayersUz = {
         Fajr: "Bomdod",
